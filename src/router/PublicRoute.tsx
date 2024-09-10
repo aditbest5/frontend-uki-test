@@ -13,7 +13,6 @@ const PublicRoute = ({ element }: PublicRouteProps): JSX.Element => {
         return <Navigate to="/" />;
     }
 
-    // Return the element or fallback to <div /> if element is undefined
     return element || <div />;
 };
 

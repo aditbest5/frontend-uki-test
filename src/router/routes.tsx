@@ -3,7 +3,6 @@ import { RouteObject } from 'react-router-dom';
 import PublicRoute from './PublicRoute';
 import ProtectedRoute from './ProtectedRoute';
 
-// Define a new type that extends RouteObject and adds the layout property
 type CustomRouteObject = RouteObject & {
   layout?: 'blank' | 'default';
 };
@@ -19,7 +18,7 @@ const routes: CustomRouteObject[] = [
     {
         path: '/',
         element: <ProtectedRoute element={<Index />} />,
-        layout: 'default', // Add layout property here
+        layout: 'default',
     },
     {
         path: '/users/list',
